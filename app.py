@@ -11,7 +11,7 @@ def index():
 def upload_file():
     file = request.files['file']
     s3 = boto3.client('s3')
-    bucket_name = 'Assignment-AWS-S3'
+    bucket_name = 'assignment-aws-s3'
     s3.upload_fileobj(file, bucket_name, file.filename)
     return jsonify({'message': 'File uploaded successfully'})
 

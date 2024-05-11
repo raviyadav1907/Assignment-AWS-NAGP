@@ -7,4 +7,6 @@ pip3 install boto3
 pip3 install pymysql
 git clone https://github.com/raviyadav1907/Assignment-AWS-NAGP.git
 cd Assignment-AWS-NAGP
+mkdir templates
+mv index.html templates/
 python3 app.py
